@@ -113,9 +113,7 @@ map <F9> <ESC>o/*<CR> * IAMROOT, <C-R>=strftime("%Y.%m.%d")<CR>
 " =  vim 설정                                                             =
 " =========================================================================
 " 탭 정지 = 8 칸마다
-set tabstop=8
 " 쉬프트 (<< 혹은 >>) 이동거리 8 칸
-set shiftwidth=8
 
 " 줄 번호를 표시한다.
 set number
@@ -300,3 +298,5 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set cursorline
+
+set fencs=ucs-bom,utf-8,cp949
