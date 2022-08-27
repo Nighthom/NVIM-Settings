@@ -5,9 +5,13 @@ call plug#begin('~/.vim/plugged') " 플러그인 시작
 
 " Conquer Of Completion 자동완성 플러그인
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Vim Surround 플러그인
 Plug 'tpope/vim-surround'
 " nvim-treesitter 구문 파싱 하이라이팅
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" Emmet 자동적용 플러그인
+Plug 'mattn/emmet-vim'
 
 " Tagbar 코드 뷰어 창
 " Plug 'majutsushi/tagbar'
@@ -40,6 +44,11 @@ Plug 'svermeulen/vim-cutlass'
 " VIM GAS(GNU ASsembler) Highlighting
 Plug 'Shirk/vim-gas'
 
+" HTML 태그 자동 닫기
+Plug 'alvan/vim-closetag'
+
+" 짝 문자 자동 입력
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 " =========================================================================
 " =  단축키 지정                                                          =
@@ -65,6 +74,8 @@ inoremap kj <ESC>
 " <F1> 을 통해 NERDTree 와 Tagbar 열기
 nnoremap <silent><F1> :NERDTreeToggle<CR><bar>:TagbarToggle <CR> 
 
+" emmet 자동완성을 tab으로 적용하기
+imap <expr> <tab> emmet#expandAbbrIntelligent("<tab>")
 " <Ctrl + h, l> 를 눌러서 이전, 다음 탭으로 이동
 nnoremap <silent><C-j> :tabprevious<CR>
 nnoremap <silent><C-k> :tabnext<CR>
