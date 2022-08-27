@@ -19,7 +19,8 @@ Plug 'preservim/tagbar'
 
 " NERDTree 코드 뷰어 창
 Plug 'preservim/nerdtree'
-
+" NERDTree Git 플러그인
+Plug 'Xuyuanp/nerdtree-git-plugin'
 " 컬러스킴(색상표) jellybeans, gruvbox
 Plug 'nanotech/jellybeans.vim'
 " Plug 'morhetz/gruvbox'
