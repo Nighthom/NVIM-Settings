@@ -25,6 +25,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'nanotech/jellybeans.vim'
 " Plug 'morhetz/gruvbox'
 
+" NerdCommenter(자동주석완성)
+Plug 'preservim/nerdcommenter'
 " 하단에 다양한 상태(몇 번째 줄, 인코딩, etc.)를
 " 표시하는 상태바 추가
 Plug 'vim-airline/vim-airline'
