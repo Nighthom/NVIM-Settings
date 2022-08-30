@@ -52,6 +52,9 @@ Plug 'alvan/vim-closetag'
 
 " 짝 문자 자동 입력
 Plug 'jiangmiao/auto-pairs'
+
+" VIM Easymotion
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 " =========================================================================
 " =  단축키 지정                                                          =
