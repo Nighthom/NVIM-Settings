@@ -316,4 +316,9 @@ set shiftwidth=4
 set expandtab
 set cursorline
 
+" 한글 인코딩 사용
 set fencs=ucs-bom,utf-8,cp949
+
+" 언어 강제로 영어로 세팅
+set langmenu=en_US.UTF-8
+language messages en_US.UTF-8
