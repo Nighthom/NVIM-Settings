@@ -32,6 +32,8 @@ Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Git 플러그인
+Plug 'tpope/vim-fugitive'
 " CScope 플러그인
 Plug 'ronakg/quickr-cscope.vim'
 
