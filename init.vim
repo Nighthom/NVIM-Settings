@@ -281,6 +281,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " ------------------------------------
 " tagbar 생성 시 우측 하단에 위치하게끔 생성
 let g:tagbar_position = 'rightbelow'
+" F12 누를 경우 tagbar 생성
+nmap <F12> :TagbarToggle<CR>
 " ------------------------------------
 " ConqueTerm 설정
 " 창 전환 시 ConqueTerm 에 Insert 상태로 활성화
