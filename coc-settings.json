@@ -12,5 +12,6 @@
     "suggest.echodocSupport": true,
     "codeLens.enable": true,
     "signature.enable": true,
-    "suggest.preferCompleteThanJumpPlaceholder": true
+    "suggest.preferCompleteThanJumpPlaceholder": true,
+    "python.jediEnabled": false
 }

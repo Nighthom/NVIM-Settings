@@ -253,7 +253,7 @@ endif
       "\ coc#refresh()
 "inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>
 " coc extensions
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-import-cost', 'coc-eslint', 'coc-snippets', 'coc-html', 'coc-css', 'coc-emmet', 'coc-pyright', 'coc-phpls', 'coc-angular', 'coc-git', 'coc-clangd']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-import-cost', 'coc-eslint', 'coc-html', 'coc-css', 'coc-emmet', 'coc-pyright', 'coc-phpls', 'coc-angular', 'coc-git', 'coc-clangd']
 let g:coc_global_extensions += ['https://github.com/andys8/vscode-jest-snippets']
 " <Backspace> 키가 지시자 제거, 기존 자동완성 양식 폐기
 function! s:check_back_space() abort
