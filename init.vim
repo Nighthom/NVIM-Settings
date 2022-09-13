@@ -13,6 +13,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Emmet 자동적용 플러그인
 Plug 'mattn/emmet-vim'
 
+" markdown preview 플러그인
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 " Tagbar 코드 뷰어 창
 " Plug 'majutsushi/tagbar'
 Plug 'preservim/tagbar'
