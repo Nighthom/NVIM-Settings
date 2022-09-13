@@ -10,6 +10,8 @@ Plug 'tpope/vim-surround'
 " nvim-treesitter 구문 파싱 하이라이팅
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+" Markdown 프리뷰용 플러그인
+Plug 'shime/vim-livedown'
 " Emmet 자동적용 플러그인
 Plug 'mattn/emmet-vim'
 
