@@ -4,6 +4,7 @@
 call plug#begin('~/.vim/plugged') " 플러그인 시작
 
 " Conquer Of Completion 자동완성 플러그인
+" Node JS 필요함
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Vim Surround 플러그인
 Plug 'tpope/vim-surround'
@@ -17,6 +18,7 @@ Plug 'mattn/emmet-vim'
 
 " Tagbar 코드 뷰어 창
 " Plug 'majutsushi/tagbar'
+" ctags 플러그인 필요
 Plug 'preservim/tagbar'
 
 " NERDTree 코드 뷰어 창
@@ -312,9 +314,11 @@ let g:airline#extensions#tabline#show_tabs = 1
 " 창 크기(가로)를 20 으로 설정
 let g:NERDTreeWinSize=30
 " ------------------------------------
-" vim-cutlass 설정
+" Livedonw 설정
 " ------------------------------------
-" c, C 명령어는 yank 에 영향을 주도록 변경
+"  F10 누를 경우 localhost에서 Markdown 문서 열도록 설정
+nnoremap <F10> :LivedownToggle<CR>
+
 syntax on
 set background=dark
 set nu                                                                                           
