@@ -12,6 +12,7 @@ Plug 'tpope/vim-surround'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Markdown 프리뷰용 플러그인
+" npm install -g livedown@1.0.11
 Plug 'shime/vim-livedown'
 " Emmet 자동적용 플러그인
 Plug 'mattn/emmet-vim'
@@ -286,7 +287,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " tagbar 생성 시 우측 하단에 위치하게끔 생성
 let g:tagbar_position = 'rightbelow'
 " F12 누를 경우 tagbar 생성
-nmap <F12> :TagbarToggle<CR>
+nmap gt :TagbarToggle<CR>
 " ------------------------------------
 " ConqueTerm 설정
 " 창 전환 시 ConqueTerm 에 Insert 상태로 활성화
@@ -317,7 +318,14 @@ let g:NERDTreeWinSize=30
 " Livedonw 설정
 " ------------------------------------
 "  F10 누를 경우 localhost에서 Markdown 문서 열도록 설정
-nnoremap <F10> :LivedownToggle<CR>
+nnoremap gm :LivedownToggle<CR>
+" ------------------------------------
+" Git 설정
+" ------------------------------------
+nnoremap gd :Gdiffsplit<CR>
+nnoremap gc :G commit -a<CR>
+nnoremap gp :G push origin master<CR>
+nnoremap gl :G log<CR>
 
 syntax on
 set background=dark
